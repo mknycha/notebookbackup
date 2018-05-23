@@ -1,0 +1,1699 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"input",
+				"input-group-addon\t(edit_details.html.erb)"
+			],
+			[
+				"per",
+				"persisted\t(withdrawals.rb)"
+			],
+			[
+				"pla",
+				"player_1"
+			],
+			[
+				"queue",
+				"queue_name"
+			],
+			[
+				"disable",
+				"disable_promotion"
+			],
+			[
+				"promotion",
+				"promotion_class"
+			],
+			[
+				"mark",
+				"market_id"
+			],
+			[
+				"marke",
+				"market_name\t(regrade_request_serializer.rb)"
+			],
+			[
+				"eve",
+				"event_name\t(regrade_request_serializer.rb)"
+			],
+			[
+				"sport",
+				"sport_name"
+			],
+			[
+				"not",
+				"notification"
+			],
+			[
+				"is",
+				"isEmailDisabled\t(edit.html.erb)"
+			],
+			[
+				"add",
+				"add_promotion"
+			],
+			[
+				"prom",
+				"promotion_class"
+			],
+			[
+				"promo",
+				"promotion_class"
+			],
+			[
+				"and",
+				"and_return"
+			],
+			[
+				"seria",
+				"serialized_promotion"
+			],
+			[
+				"Prom",
+				"Promotions::AddPromotion.new"
+			],
+			[
+				"instance",
+				"instance_double"
+			],
+			[
+				"crea",
+				"create_channel\t(promotion_management_service.rb)"
+			],
+			[
+				"en",
+				"encode\t(send_announcement_service.rb)"
+			],
+			[
+				"regra",
+				"regrade_request\t(regrade_requests_controller.rb)"
+			],
+			[
+				"spo",
+				"sport_bets\t(show.html.erb)"
+			],
+			[
+				"regr",
+				"regrade_requests\t(regrade_requests_controller.rb)"
+			],
+			[
+				"betra",
+				"betradar_id\t(events_controller.rb)"
+			],
+			[
+				"ae",
+				"aerospike_event"
+			],
+			[
+				"event",
+				"eventId"
+			],
+			[
+				"mar",
+				"market_id\t(regrade_requests_controller.rb)"
+			],
+			[
+				"ma",
+				"market\t(regrade_requests_controller.rb)"
+			],
+			[
+				"spor",
+				"sport_id"
+			],
+			[
+				"requestRegrade",
+				"requestRegradeSuccess"
+			],
+			[
+				"vm",
+				"vm.regradeRequests"
+			],
+			[
+				"requ",
+				"request_id"
+			],
+			[
+				"data-me",
+				"data-show-message-on-error\t(_sports_bets_analysis_tab.html.erb)"
+			],
+			[
+				"data-on",
+				"data-show-message-on-error\t(_account_statement_tab.html.erb)"
+			],
+			[
+				"execu",
+				"executeRequest"
+			],
+			[
+				"Not",
+				"Notifier"
+			],
+			[
+				"async",
+				"async_reports"
+			],
+			[
+				"Data",
+				"DataLoadFactory"
+			],
+			[
+				"GeneralData",
+				"GeneralDataLoadFactory"
+			],
+			[
+				"over",
+				"overview_params"
+			],
+			[
+				"regrade",
+				"regrade_request"
+			],
+			[
+				"settlem",
+				"settlement_flags"
+			],
+			[
+				"shared",
+				"shared_examples"
+			],
+			[
+				"results",
+				"results_to_disapprove"
+			],
+			[
+				"void",
+				"void_bets"
+			],
+			[
+				"edit",
+				"editing"
+			],
+			[
+				"vip",
+				"vip_cost_percentage\t(affiliates_edit_details_controller.coffee)"
+			],
+			[
+				"with",
+				"withdrawal"
+			],
+			[
+				"sports",
+				"sports_commission_percentage"
+			],
+			[
+				"cost",
+				"cost_percentage\t(affiliates_controller.rb)"
+			],
+			[
+				"casin",
+				"casino_commission_percentage\t(master_agents_controller.rb)"
+			],
+			[
+				"user",
+				"user_id_formatted"
+			],
+			[
+				"userna",
+				"username_formatted"
+			],
+			[
+				"displ",
+				"displayed_name"
+			],
+			[
+				"di",
+				"div\t(_signed_in.html.erb)"
+			],
+			[
+				"dis",
+				"displayed_name\t(_signed_in.html.erb)"
+			],
+			[
+				"admin",
+				"admin_signed_in"
+			],
+			[
+				"bin",
+				"binding\tfunc"
+			],
+			[
+				"authenti",
+				"authentication"
+			],
+			[
+				"Authenti",
+				"AuthenticationLog"
+			],
+			[
+				"after",
+				"after_authentication\t(warden.rb)"
+			],
+			[
+				"sing",
+				"sign_in_user"
+			],
+			[
+				"sign",
+				"sign_in_user\t(feature_helpers.rb)"
+			],
+			[
+				"Authe",
+				"AuthenticationLog"
+			],
+			[
+				"useer",
+				"user_type"
+			],
+			[
+				"affi",
+				"affiliate_id"
+			],
+			[
+				"wallet_tran",
+				"wallet_transaction"
+			],
+			[
+				"block",
+				"blockchain-statuses\t(index.html.erb)"
+			],
+			[
+				"percen",
+				"percent_synced\t(statuses_controller_spec.rb)"
+			],
+			[
+				"bloc",
+				"blockchain"
+			],
+			[
+				"perce",
+				"percent_synced\t(statuses_controller_spec.rb)"
+			],
+			[
+				"blo",
+				"blockchain"
+			],
+			[
+				"stri",
+				"stringify_keys\t(affiliates_controller_spec.rb)"
+			],
+			[
+				"destina",
+				"destination_login\t(settlement_serializer.rb)"
+			],
+			[
+				"source",
+				"source_login\t(settlement_serializer.rb)"
+			],
+			[
+				"wa",
+				"wallet_balance\t(affiliates_controller_spec.rb)"
+			],
+			[
+				"sending",
+				"sending_mass_email_enabled\t(player_search_controller.rb)"
+			],
+			[
+				"self",
+				"self_excluded"
+			],
+			[
+				"self_",
+				"self_excluded_till\t(players_search_query.rb)"
+			],
+			[
+				"ng",
+				"ng-bind\t(_table.html.erb)"
+			],
+			[
+				"any",
+				"any_true_values_in_badge_params"
+			],
+			[
+				"recip",
+				"recipientsCount"
+			],
+			[
+				"sele",
+				"selectedCount"
+			],
+			[
+				"reci",
+				"recipientsCount\t(player_table_mailing_controller.coffee)"
+			],
+			[
+				"search",
+				"search_query"
+			],
+			[
+				"filte",
+				"filterMailingSelected"
+			],
+			[
+				"filt",
+				"filterMailingSelected"
+			],
+			[
+				"filter",
+				"filterMailingSelected\t(total_players_mailing_controller.coffee)"
+			],
+			[
+				"rec",
+				"recipientType\t(base_mass_mailing_controller.coffee)"
+			],
+			[
+				"send",
+				"sendEmailSuccess"
+			],
+			[
+				"selected",
+				"selectedIds\t(general_mass_mailing_controller.coffee)"
+			],
+			[
+				"total",
+				"totalPlayerCount"
+			],
+			[
+				"query",
+				"queryParams"
+			],
+			[
+				"Mo",
+				"ModalService"
+			],
+			[
+				"str",
+				"stringify_keys"
+			],
+			[
+				"expect",
+				"expected_response_data"
+			],
+			[
+				"player",
+				"player1"
+			],
+			[
+				"player_s",
+				"player_summary_path\t(player_search_serializer.rb)"
+			],
+			[
+				"play",
+				"player1"
+			],
+			[
+				"apply",
+				"apply_filters"
+			],
+			[
+				"number",
+				"number_of_bets"
+			],
+			[
+				"numbe",
+				"number_of_bets"
+			],
+			[
+				"com",
+				"completed_bet"
+			],
+			[
+				"compl",
+				"completed_selection"
+			],
+			[
+				"pen",
+				"pending_selection"
+			],
+			[
+				"gma",
+				"game_name"
+			],
+			[
+				"game",
+				"game_name"
+			],
+			[
+				"inclu",
+				"include_game_name\t(casino_bet_serializer.rb)"
+			],
+			[
+				"balances",
+				"balances_by_type\t(wallet_balances.rb)"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"resp",
+				"response_formatted"
+			],
+			[
+				"ng-",
+				"ng-bind"
+			],
+			[
+				"age",
+				"agent_nickname\t(show.html.erb)"
+			],
+			[
+				"agent_",
+				"agent_nickname\t(agent_players_services.coffee)"
+			],
+			[
+				"tr",
+				"translator"
+			],
+			[
+				"agent",
+				"agent_nickname"
+			],
+			[
+				"canc",
+				"cancelled_at_datetime"
+			],
+			[
+				"cancelled",
+				"cancelled_at"
+			],
+			[
+				"Sports",
+				"SportsBetWithFunds"
+			],
+			[
+				"exp",
+				"expected_response"
+			],
+			[
+				"json",
+				"json_response"
+			],
+			[
+				"apic",
+				"api_client_id"
+			],
+			[
+				"api",
+				"api_client_id"
+			],
+			[
+				"paras",
+				"params_passed_to_client"
+			],
+			[
+				"award",
+				"award_free_spin\t(free_spins_controller.rb)"
+			],
+			[
+				"awar",
+				"award_free_spin\t(free_spins_controller.rb)"
+			],
+			[
+				"action",
+				"action_name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "diary/may18.md",
+			"settings":
+			{
+				"buffer_size": 835,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "manager.py",
+			"settings":
+			{
+				"buffer_size": 149,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 329.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insert",
+				"InsertDate: Custom"
+			],
+			[
+				"inset",
+				"InsertDate: Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"change",
+				"GitGutter: Goto Next Change"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"con",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conve",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"i18",
+				"I18n Rails: Toggle key highlighting"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"subl",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"git che",
+				"Git: Checkout Current File"
+			],
+			[
+				"show ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"git a",
+				"Git: Add Current File"
+			],
+			[
+				"copy pa",
+				"File: Copy Path"
+			],
+			[
+				"build wit",
+				"Build With: my_rspec"
+			],
+			[
+				"github",
+				"GitHubinator Blame on Master"
+			],
+			[
+				"show e",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"git mas",
+				"GitHubinator on Master"
+			],
+			[
+				"revert ",
+				"GitGutter: Revert Change to Commit"
+			],
+			[
+				"git gutter",
+				"GitGutter: Revert Change to Commit"
+			],
+			[
+				"git gutt",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"git gut",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"close",
+				"Close Other Tabs: Close all tabs except the active one"
+			],
+			[
+				"nsta",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build With: zeus_rspec"
+			],
+			[
+				"git add ",
+				"Git: Add Current File"
+			],
+			[
+				"rspe",
+				"Build With: my_rspec"
+			],
+			[
+				"rspec",
+				"Build With: my_rspec"
+			],
+			[
+				"toggle",
+				"View: Toggle Side Bar"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"rspec open",
+				"RSpec: open corresponding file"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"git sel",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git: gui",
+				"Git: Gui"
+			],
+			[
+				"git: add",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"toogle",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"convert ",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"git",
+				"Git: Blame"
+			],
+			[
+				"Text",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: All",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 652.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"bundle exec rspec"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/diary",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/public",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook/docs"
+	],
+	"file_history":
+	[
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/notebook.sublime-project",
+		"/Users/marcinknychala/bgl/bitgamelabs-zendesk/node_modules/caniuse-db/features-json/document-scrollingelement.json",
+		"/Users/marcinknychala/test.txt",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/competitors.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/competitors/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/affiliates/_info.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/_details_tab.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/players/summary/players_summary_details.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/players/summary/edit_details.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/affiliates_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/withdrawals/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/withdrawals_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/repositories/withdrawals_repository.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/config/sidebar.yml",
+		"/Users/marcinknychala/bgl/gaming_admin/Gemfile",
+		"/Users/marcinknychala/bgl/gaming_admin/config/routes.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/config/locales/navigation.en.yml",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/withdrawals_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/services/players/create_manual_withdrawal.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/withdrawals/withdrawals_processing_controllers.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/casino/casino_game_overrides_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/casino/casino_game_overrides/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/casino/casino_game_overrides/_overrides_table.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/casino/game_overrides/game_overrides_services.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/casino/casino_game_overrides_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/casino/games_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/casino/games_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/casino/game_overrides/casino_game_overrides_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/models/casino_games_overview.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/casino_games_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/.env",
+		"/etc/hosts",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/payments/payments_overview.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/payments/withdrawal_overview_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/payments/withdrawal_overview_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/services/players/create_manual_withdrawal_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/payments_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/factories/withdrawals.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/factories/setting.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/factories/player_factory.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/spec_helper.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/Gemfile.lock",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/promotions_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/forms/promotion_scheme_form.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/sportbook/bets_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/services/marketing/promotion_publisher_service_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/services/marketing/promotion_publisher_service.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/concerns/overview_params.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/settings_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/admins/agents/master_agents_services.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/affiliates/affiliate_withdrawal_requests/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/superadmins/agents/master_agents/new.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/config/locales/en.yml",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/factories/agent_factory.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/players/details_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/players/details_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/player_details_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/agents/master_agents_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/forms/superadmins/master_agents/create_form.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/forms/players/update_form_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/forms/players/update_form.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/players/summary_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/forms/affiliates/create_withdrawal_request_form.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/agents/master_agents_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/affiliates_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/factories/affiliate_factory.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/affiliates_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/affiliate_detail_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/affiliate_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/coverage/index.html",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/_sports_bets_tab.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/events/_info_tab.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/sportbook/events_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/forms/sportbook/update_regrade_request_form.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/regrade_requests/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/players/summary/player_sports_bets_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/sportbook/create_request_regrade_modal.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/api/sportbook/regrade_requests_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/notifications/notification_edit_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/regrade_request_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/sportbook/regrade_requests_controller.rb",
+		"/Users/marcinknychala/.ssh/known_hosts",
+		"/Users/marcinknychala/.ssh/config",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/sportbook/regrade_requests_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/notifications/edit.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/superadmins/notifications/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/superadmins/notifications_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/notifications/notifications_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/marketing/popular_events/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/agents/event_details/restricted_market.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/common/components/dynamic_component_generator/dynamic_component_generator.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/casino_games_image_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/casino_bet_audit_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/services/sportbook/results_requester_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/services/sportbook/results_requester.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/services/send_announcement_service.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/services/send_announcement_service_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/services/marketing/promotion_management_service.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/services/marketing/promotion_management_service_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/concerns/sports_bet_common.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/serializers/sports_bet_serializer.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/events/show.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/player_bets_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/repositories/player_bets_repository.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/sql_queries/player_bets_with_events.sql.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/sportbook/events_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/policies/sports_bet_policy.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/components/spinnerable.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/controllers/sportbook/regrade_requests_controller_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/regrade_requests/edit.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/controllers/api/sportbook/events_controller.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/repositories/markets_repository.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/decorators/ae_event_decorator.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/events/event_info_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/events/events_services.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_request_modal_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_requests_services.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/players/summary/summary_tab.html",
+		"/Users/marcinknychala/bgl/gaming_admin/spec/forms/sportbook/update_regrade_request_form_spec.rb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_requests_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/_tags_tab.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/competition_grades/competition_grades_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/competition_grades/index.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/show.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/shared/general_data_load_controller.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/agents/event_details/show.html.erb",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/components/tab_switcher.coffee",
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/components/dynamic_component_generator.coffee"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "diary/may18.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								835,
+								835
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"open_with_edit": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "manager.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"SL.720.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/my_rspec.sublime-build",
+	"project": "notebook.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"contro",
+				"app/controllers/affiliates_controller.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"api translations",
+				"app/controllers/api/sportbook/competitor_translations_controller.rb"
+			],
+			[
+				"translations_tab",
+				"app/views/sportbook/competitors/_translations_tab.html.erb"
+			],
+			[
+				"image_tab",
+				"app/views/sportbook/competitors/_image_tab.html.erb"
+			],
+			[
+				"sportbook competitors show",
+				"app/views/sportbook/competitors/show.html.erb"
+			],
+			[
+				"competitors index",
+				"app/views/sportbook/competitors/index.html.erb"
+			],
+			[
+				"competitors",
+				"app/assets/javascripts/angular/components/competitors.coffee"
+			],
+			[
+				"affiliates contr",
+				"app/controllers/affiliates_controller.rb"
+			],
+			[
+				"info",
+				"app/views/affiliates/_info.html.erb"
+			],
+			[
+				"edit details",
+				"app/assets/javascripts/angular/templates/players/summary/edit_details.html.erb"
+			],
+			[
+				"_details",
+				"app/views/players/summary/_details_tab.html.erb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				".yml",
+				"config/locales/navigation.en.yml"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"wtihdrawals cn",
+				"app/controllers/withdrawals_controller.rb"
+			],
+			[
+				"withdraw",
+				"app/controllers/api/withdrawals_controller.rb"
+			],
+			[
+				"withdrawals index",
+				"app/views/withdrawals/index.html.erb"
+			],
+			[
+				"games con",
+				"app/controllers/api/casino/games_controller.rb"
+			],
+			[
+				"casino games contr",
+				"app/controllers/casino/games_controller.rb"
+			],
+			[
+				"casino game overri",
+				"app/controllers/api/casino/casino_game_overrides_controller.rb"
+			],
+			[
+				"_override",
+				"app/views/casino/casino_game_overrides/_overrides_table.html.erb"
+			],
+			[
+				"casino game index",
+				"app/views/casino/casino_game_overrides/index.html.erb"
+			],
+			[
+				"casino game over",
+				"app/controllers/casino/casino_game_overrides_controller.rb"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"create manu",
+				"spec/services/players/create_manual_withdrawal_spec.rb"
+			],
+			[
+				"api payments",
+				"spec/controllers/api/payments_controller_spec.rb"
+			],
+			[
+				"creare ma",
+				"spec/services/players/create_manual_withdrawal_spec.rb"
+			],
+			[
+				"withdrawal",
+				"spec/factories/withdrawals.rb"
+			],
+			[
+				"payments over",
+				"spec/controllers/api/payments/payments_overview.rb"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"settin",
+				"spec/factories/setting.rb"
+			],
+			[
+				"player",
+				"spec/factories/player_factory.rb"
+			],
+			[
+				"withdrawal overivew contr",
+				"spec/controllers/api/payments/withdrawal_overview_controller_spec.rb"
+			],
+			[
+				"wtihdrawal over",
+				"app/controllers/api/payments/withdrawal_overview_controller.rb"
+			],
+			[
+				"api bets contro",
+				"app/controllers/api/sportbook/bets_controller.rb"
+			],
+			[
+				"promotion",
+				"spec/services/marketing/promotion_publisher_service_spec.rb"
+			],
+			[
+				"marketing publis",
+				"app/services/marketing/promotion_publisher_service.rb"
+			],
+			[
+				"master gae",
+				"app/assets/javascripts/angular/components/admins/agents/master_agents_services.coffee"
+			],
+			[
+				"en",
+				"config/locales/en.yml"
+			],
+			[
+				"details",
+				"app/controllers/api/players/details_controller.rb"
+			],
+			[
+				"player detail",
+				"app/serializers/player_details_serializer.rb"
+			],
+			[
+				"update form",
+				"spec/forms/players/update_form_spec.rb"
+			],
+			[
+				"affiliate",
+				"spec/factories/affiliate_factory.rb"
+			],
+			[
+				"api affiliates con",
+				"app/controllers/api/affiliates_controller.rb"
+			],
+			[
+				"regrade",
+				"app/forms/sportbook/update_regrade_request_form.rb"
+			],
+			[
+				"update req",
+				"app/forms/sportbook/update_regrade_request_form.rb"
+			],
+			[
+				"events con",
+				"app/controllers/sportbook/events_controller.rb"
+			],
+			[
+				"_info_tab",
+				"app/views/sportbook/events/_info_tab.html.erb"
+			],
+			[
+				"_sports bets",
+				"app/views/players/summary/_sports_bets_tab.html.erb"
+			],
+			[
+				"regrade requests inde",
+				"app/views/sportbook/regrade_requests/index.html.erb"
+			],
+			[
+				"create regrade",
+				"app/assets/javascripts/angular/templates/sportbook/create_request_regrade_modal.html.erb"
+			],
+			[
+				"player sports",
+				"app/assets/javascripts/angular/components/players/summary/player_sports_bets_controller.coffee"
+			],
+			[
+				"gemfi",
+				"Gemfile.lock"
+			],
+			[
+				"regraderequests",
+				"spec/controllers/api/sportbook/regrade_requests_controller_spec.rb"
+			],
+			[
+				"promotion_publis",
+				"spec/services/marketing/promotion_publisher_service_spec.rb"
+			],
+			[
+				"regra",
+				"app/serializers/regrade_request_serializer.rb"
+			],
+			[
+				"notification_edi",
+				"app/assets/javascripts/angular/components/notifications/notification_edit_controller.coffee"
+			],
+			[
+				"regradereq",
+				"spec/controllers/api/sportbook/regrade_requests_controller_spec.rb"
+			],
+			[
+				"notificationcontr",
+				"app/controllers/superadmins/notifications_controller.rb"
+			],
+			[
+				"notifications/edit",
+				"app/assets/javascripts/angular/templates/notifications/edit.html.erb"
+			],
+			[
+				"notificationeditctrl",
+				"app/assets/javascripts/angular/components/notifications/notification_edit_controller.coffee"
+			],
+			[
+				"notificationsindex",
+				"app/views/superadmins/notifications/index.html.erb"
+			],
+			[
+				"promot",
+				"spec/services/marketing/promotion_management_service_spec.rb"
+			],
+			[
+				"genericcompo",
+				"app/assets/javascripts/common/components/dynamic_component_generator/dynamic_component_generator.coffee"
+			],
+			[
+				"sendann",
+				"spec/services/send_announcement_service_spec.rb"
+			],
+			[
+				"player_bets_with_events",
+				"app/sql_queries/player_bets_with_events.sql.erb"
+			],
+			[
+				"playerbetscon",
+				"app/controllers/api/player_bets_controller.rb"
+			],
+			[
+				"_sportsbets",
+				"app/views/players/summary/_sports_bets_tab.html.erb"
+			],
+			[
+				"regraderequestsindex",
+				"app/views/sportbook/regrade_requests/index.html.erb"
+			],
+			[
+				"eventscontrollerspec",
+				"spec/controllers/sportbook/events_controller_spec.rb"
+			],
+			[
+				"infota",
+				"app/views/sportbook/events/_info_tab.html.erb"
+			],
+			[
+				"eventscontroll",
+				"app/controllers/sportbook/events_controller.rb"
+			],
+			[
+				"createrequestregrade",
+				"app/assets/javascripts/angular/templates/sportbook/create_request_regrade_modal.html.erb"
+			],
+			[
+				"regraderequestedi",
+				"app/views/sportbook/regrade_requests/edit.html.erb"
+			],
+			[
+				"regraderequestsinde",
+				"app/views/sportbook/regrade_requests/index.html.erb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"info_tab",
+				"app/views/sportbook/events/_info_tab.html.erb"
+			],
+			[
+				"eventsshow",
+				"app/views/sportbook/events/show.html.erb"
+			],
+			[
+				"createrequestregrademo",
+				"app/assets/javascripts/angular/templates/sportbook/create_request_regrade_modal.html.erb"
+			],
+			[
+				"summaryshow",
+				"app/views/players/summary/show.html.erb"
+			],
+			[
+				"tagstab",
+				"app/views/players/summary/_tags_tab.html.erb"
+			],
+			[
+				"summarycon",
+				"app/controllers/players/summary_controller.rb"
+			],
+			[
+				"genraldata",
+				"app/assets/javascripts/angular/components/shared/general_data_load_controller.coffee"
+			],
+			[
+				"playersummaryshow",
+				"app/views/players/summary/show.html.erb"
+			],
+			[
+				"sports_bets_tab",
+				"app/views/players/summary/_sports_bets_tab.html.erb"
+			],
+			[
+				"sportbookevent",
+				"app/controllers/api/sportbook/events_controller.rb"
+			],
+			[
+				"regraderequestmodalctrl",
+				"app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_request_modal_controller.coffee"
+			],
+			[
+				"playersportsbetscon",
+				"app/assets/javascripts/angular/components/players/summary/player_sports_bets_controller.coffee"
+			],
+			[
+				"sportbookeventscon",
+				"app/controllers/sportbook/events_controller.rb"
+			],
+			[
+				"components/compon",
+				"app/assets/javascripts/angular/components/components/tab_switcher.coffee"
+			],
+			[
+				"components/",
+				"app/assets/javascripts/angular/components/components/dynamic_component_generator.coffee"
+			],
+			[
+				"regraderequestinde",
+				"app/views/sportbook/regrade_requests/index.html.erb"
+			],
+			[
+				"updateregraderequestform",
+				"spec/forms/sportbook/update_regrade_request_form_spec.rb"
+			],
+			[
+				"regraderequestcon",
+				"spec/controllers/sportbook/regrade_requests_controller_spec.rb"
+			],
+			[
+				"g",
+				"Gemfile.lock"
+			],
+			[
+				"apiregraderequestssp",
+				"spec/controllers/api/sportbook/regrade_requests_controller_spec.rb"
+			],
+			[
+				"regraderequestser",
+				"app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_requests_services.coffee"
+			],
+			[
+				"secre",
+				"config/secrets.yml"
+			],
+			[
+				"initialie",
+				"config/initializers/aerospike_initializer.rb"
+			],
+			[
+				"regraderequstse",
+				"app/serializers/regrade_request_serializer.rb"
+			],
+			[
+				"regraderequestindex",
+				"app/views/sportbook/regrade_requests/index.html.erb"
+			],
+			[
+				"notificationcont",
+				"app/controllers/api/notifications_controller.rb"
+			],
+			[
+				"gua",
+				"Guardfile"
+			],
+			[
+				"guard",
+				"Guardfile"
+			],
+			[
+				"regraderequest",
+				"spec/controllers/api/sportbook/regrade_requests_controller_spec.rb"
+			],
+			[
+				"regrad",
+				"app/controllers/sportbook/regrade_requests_controller.rb"
+			],
+			[
+				"regradere",
+				"app/controllers/api/sportbook/regrade_requests_controller.rb"
+			],
+			[
+				"competitiongrades",
+				"app/controllers/api/sportbook/competition_grades_controller.rb"
+			],
+			[
+				"competitiongradesinde",
+				"app/views/sportbook/competition_grades/index.html.erb"
+			],
+			[
+				"notif",
+				"app/assets/javascripts/angular/components/shared/notifier.coffee"
+			],
+			[
+				"playeraudittr",
+				"app/assets/javascripts/angular/components/players/audit/player_audit_transactions_controller.coffee"
+			],
+			[
+				"eventscon",
+				"app/controllers/api/sportbook/events_controller.rb"
+			],
+			[
+				"playerwatcl",
+				"app/controllers/api/player_watchlists_controller.rb"
+			],
+			[
+				"apiemail",
+				"app/controllers/api/emails_controller.rb"
+			],
+			[
+				"emailpolic",
+				"app/policies/email_template_policy.rb"
+			],
+			[
+				"vipdealcon",
+				"app/controllers/api/players/vip_deals_controller.rb"
+			],
+			[
+				"apicasinobetscontroller",
+				"app/controllers/api/casino/bets_controller.rb"
+			],
+			[
+				"sportsbet",
+				"app/policies/sports_bet_policy.rb"
+			],
+			[
+				"sportbookbetscon",
+				"app/controllers/api/sportbook/bets_controller.rb"
+			],
+			[
+				"casinobetscontroller",
+				"app/controllers/api/casino/bets_controller.rb"
+			],
+			[
+				"rollover_bonus",
+				"app/controllers/api/players/rollover_bonuses_controller.rb"
+			],
+			[
+				"bonus_tab",
+				"app/views/players/summary/_bonus_tab.html.erb"
+			],
+			[
+				"appl",
+				"app/policies/application_policy.rb"
+			],
+			[
+				"emailtempl",
+				"app/policies/email_template_policy.rb"
+			],
+			[
+				"tagline",
+				"app/policies/tagline_policy.rb"
+			],
+			[
+				"applic",
+				"app/policies/application_policy.rb"
+			],
+			[
+				"taglines",
+				"app/controllers/api/taglines_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/bgl/gaming_engine.sublime-project"
+			],
+			[
+				"bit gam",
+				"~/bgl/gaming_admin/bitgamelabs-zendesk.sublime-workspace"
+			],
+			[
+				"gam",
+				"~/gaming_admin.sublime-workspace"
+			],
+			[
+				"ga",
+				"~/gaming_engine.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 516.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 321.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

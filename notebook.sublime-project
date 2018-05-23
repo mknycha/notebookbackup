@@ -1,0 +1,50 @@
+{
+	"build_systems":
+	[
+		{
+			"linux":
+			{
+				"shell_cmd": "gnome-terminal -e './manager.py; exec bash\"'"
+			},
+			"name": "manager.py",
+			"osx":
+			{
+				"shell_cmd": "open -a Terminal.app ${project_path}"
+			},
+			"windows":
+			{
+				"cmd":
+				[
+					"start",
+					"cmd",
+					"/k",
+					"python manager.py"
+				],
+				"shell": true
+			},
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"sublime_notebook/*.py"
+			],
+			"folder_exclude_patterns":
+			[
+				"__pycache__",
+				".release",
+				"sublime_notebook/pyaes"
+			],
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"margin": 20,
+		"word_wrap": true
+	}
+}
