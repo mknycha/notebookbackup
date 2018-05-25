@@ -523,16 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 835,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "manager.py",
-			"settings":
-			{
-				"buffer_size": 149,
+				"buffer_size": 1610,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -551,7 +542,7 @@
 		[
 			[
 				"insert",
-				"InsertDate: Custom"
+				"InsertDate: Default"
 			],
 			[
 				"inset",
@@ -851,6 +842,8 @@
 	],
 	"file_history":
 	[
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook/settings.json",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/manager.py",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/notebook.sublime-project",
 		"/Users/marcinknychala/bgl/bitgamelabs-zendesk/node_modules/caniuse-db/features-json/document-scrollingelement.json",
 		"/Users/marcinknychala/test.txt",
@@ -976,9 +969,7 @@
 		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/competition_grades/index.html.erb",
 		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/show.html.erb",
 		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/shared/general_data_load_controller.coffee",
-		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/agents/event_details/show.html.erb",
-		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/components/tab_switcher.coffee",
-		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/components/dynamic_component_generator.coffee"
+		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/agents/event_details/show.html.erb"
 	],
 	"find":
 	{
@@ -1013,7 +1004,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1022,55 +1013,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 835,
+						"buffer_size": 1610,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								835,
-								835
+								1252,
+								1252
 							]
 						],
 						"settings":
 						{
-							"git_gutter_is_enabled": false,
+							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
 							"tab_size": 2
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "manager.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								95,
-								95
-							]
-						],
-						"settings":
-						{
-							"SL.720.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1118,6 +1077,10 @@
 		"height": 0.0
 	},
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
 	{
 		"height": 0.0
 	},
@@ -1657,7 +1620,7 @@
 		[
 			[
 				"",
-				"~/bgl/gaming_engine.sublime-project"
+				"~/bgl/gaming_admin.sublime-project"
 			],
 			[
 				"bit gam",
