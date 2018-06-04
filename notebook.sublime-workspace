@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 6611,
+				"buffer_size": 6344,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -540,6 +540,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"insert",
+				"InsertDate: Default"
+			],
 			[
 				"markdo",
 				"Markdown HTML Preview"
@@ -562,10 +566,6 @@
 			],
 			[
 				"ins",
-				"InsertDate: Default"
-			],
-			[
-				"insert",
 				"InsertDate: Default"
 			],
 			[
@@ -1033,19 +1033,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6611,
+						"buffer_size": 6344,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4924,
-								4338
+								4588,
+								4588
 							]
 						],
 						"settings":
 						{
+							"SL.13.region_keys":
+							[
+							],
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
@@ -1053,7 +1056,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1540.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
