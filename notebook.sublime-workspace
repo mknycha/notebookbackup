@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 9335,
+				"buffer_size": 8209,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,16 +541,16 @@
 		"selected_items":
 		[
 			[
+				"markdo",
+				"Markdown HTML Preview"
+			],
+			[
 				"inser",
 				"InsertDate: Default"
 			],
 			[
 				"insert",
 				"InsertDate: Default"
-			],
-			[
-				"markdo",
-				"Markdown HTML Preview"
 			],
 			[
 				"in",
@@ -1033,15 +1033,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9335,
+						"buffer_size": 8209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4809,
-								4809
+								8208,
+								8208
 							]
 						],
 						"settings":
@@ -1056,7 +1056,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2538.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1644,7 +1644,7 @@
 		[
 			[
 				"",
-				"~/bgl/gaming_admin.sublime-project"
+				"~/bgl/gaming_engine.sublime-project"
 			],
 			[
 				"bit gam",
