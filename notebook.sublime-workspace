@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 10102,
+				"buffer_size": 15803,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,6 +541,10 @@
 		"selected_items":
 		[
 			[
+				"inser",
+				"InsertDate: Default"
+			],
+			[
 				"mark",
 				"Markdown HTML Preview"
 			],
@@ -551,10 +555,6 @@
 			[
 				"markdo",
 				"Markdown HTML Preview"
-			],
-			[
-				"inser",
-				"InsertDate: Default"
 			],
 			[
 				"in",
@@ -1037,15 +1037,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10102,
+						"buffer_size": 15803,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								10623,
+								10623
 							]
 						],
 						"settings":
@@ -1064,7 +1064,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1163.0,
+						"translation.y": 1537.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
