@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 15803,
+				"buffer_size": 13824,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -1037,15 +1037,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15803,
+						"buffer_size": 13824,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10623,
-								10623
+								3629,
+								3629
 							]
 						],
 						"settings":
@@ -1056,6 +1056,9 @@
 							"SL.471.region_keys":
 							[
 							],
+							"SL.514.region_keys":
+							[
+							],
 							"SL.648.region_keys":
 							[
 							],
@@ -1064,7 +1067,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1537.0,
+						"translation.y": 5243.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
