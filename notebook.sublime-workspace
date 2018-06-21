@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 14560,
+				"buffer_size": 19827,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -540,6 +540,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ins",
+				"InsertDate: Default"
+			],
 			[
 				"inser",
 				"InsertDate: Default"
@@ -567,10 +571,6 @@
 			[
 				"instal",
 				"Package Control: Install Package"
-			],
-			[
-				"ins",
-				"InsertDate: Default"
 			],
 			[
 				"inset",
@@ -1037,15 +1037,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14560,
+						"buffer_size": 19827,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14079,
-								14079
+								14279,
+								14279
 							]
 						],
 						"settings":
@@ -1067,7 +1067,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5684.0,
+						"translation.y": 1775.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
