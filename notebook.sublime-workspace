@@ -523,9 +523,19 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 23815,
+				"buffer_size": 24323,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Prezka",
+			"settings":
+			{
+				"buffer_size": 3041,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "Prezka"
 			}
 		}
 	],
@@ -868,7 +878,6 @@
 	[
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/diary",
-		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/public",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook/docs"
 	],
@@ -1019,6 +1028,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			" "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1036,7 +1046,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1045,20 +1055,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23815,
+						"buffer_size": 24323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17763,
-								17610
+								18138,
+								18138
 							]
 						],
 						"settings":
 						{
 							"SL.13.region_keys":
+							[
+							],
+							"SL.353.region_keys":
 							[
 							],
 							"SL.471.region_keys":
@@ -1075,7 +1088,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2352.0,
+						"translation.y": 2369.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Prezka",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3040,
+								3040
+							]
+						],
+						"settings":
+						{
+							"SL.35.region_keys":
+							[
+							],
+							"auto_name": "Prezka",
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1663,7 +1709,7 @@
 		[
 			[
 				"",
-				"~/betting.sublime-project"
+				"~/bgl/gaming_admin.sublime-project"
 			],
 			[
 				"bit gam",
@@ -1696,7 +1742,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":

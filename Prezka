@@ -1,0 +1,34 @@
+Jak nie pisać aplikacji w railsach?
+
+Jakiś czas temu robiłem pewien projekt dla siebie w wolnym czasie. Celem było stworzenie serwisu dla małej firmy sprzątającej, w której klient może sobie założyć konto i zamówić usługę. Włącznie z planowaniem, kodzeniem i uczeniem się poświęciłem na to jakieś
+150 godzin. Efekt jest taki, że połowę chciałbym napisać od nowa :) Chociaż nie jestem tak dumny z samej apki, to myślę że dużo się nauczyłem rozwiązując problemy powstałe po drodze. Chciałbym się dzisiaj z wami podzielić kilkoma takimi ciekawostkami, żeby wasze apki były lepsze.
+
+1) Ajax - na początek rzecz która mnie chyba najbardziej zaskoczyła. Wyobraźcie sobie pewien widok obsługiwany czysto przez railsowy kontroler, bez api. Widok wyświetla listę adresów użytkownika. Ponieważ nie chcemy, żeby użytkownik mógł usunąć adres który jest wykorzystywany, dodajemy odpowiednią walidację na modelach. Po czym patrzymy na ten widok i myślimy sobie: 'Hmm, może dałoby się usuwać te adresy bez przeładowania strony. Może da się wykorzystać AJAXa!'. No więc zmieniamy nasz formularz na asynchroniczny, dodajemy odpowiedni kod w js'ie i gotowe. W tym momencie mamy przycisk delete przy wszystkich adresach, zgodnie z walidacjami jednego z nich nie powinniśmy mieć możliwości usunąć.
+Jak myślicie, co się stanie kiedy klikniemy 'delete'? ADRES ZOSTANIE USUNIĘTY MIMO WALIDACJI!
+Uważajcie na Ajaxa i formularze asynchroniczne.
+
+2) Planowanie relacji i 'grube' widoki
+Na stronie użytkownik może zamówić sobie sprzątanie, odzwierciedlone przez model Service. Zatem stronka powinna zawierać widok, w którym użytkownik mógłby podejrzeć zamówione przez siebie wizyty. Model Service zawiera następujące zależności. SCREEN. Chcielibyśmy w widoku wyświetlać mniej więcej coś takiego. SCREEN. Niby wszystko fajnie, jednak żeby wyświetlić cleanera, musimy wyciągnąć z bazy obiekt i jego atrybuty name i surname. Podobnie dla clienta. Address? Też musimy wyciągnąć adres z bazy i sprawdzić atrybuty żeby przygotować go w takiej ładnej postaci. Czyli już mamy cztery powiązane ze sobą tabele, z których dane chcemy wyświetlić w widoku. Powoduje to bardzo brzydkie i wolne zapytanie.
+Uwaga na to, co chcemy wyświetlać i jak planujemy relacje w odniesieniu do tego.
+
+3) Dig
+Jakiś czas temu natrafiłem na artykuł na temat najczęstszych błędów w railsach. Okazało się że jednym z najczęsciej występujących błędów
+jest NoMethodError: undefined method '[]' for nil:NilClass. Jak pewnie się domyślacie, łatwo go wywołać gdy próbujemy coś wyciągnąć z zagnieżdżonych hashy. Kiedy to przeczytałem, zdałem sobie sprawę, że też mam w swoim projekcie zagnieżdżone parametry. Wspominam o tym, bo jest to 'low hanging fruit' i możemy bardzo łatwo temu zapobieć. Wystarczy zamiast wywołania [:a][:b], użyć metody .dig(:a, :b). Jeśli klucz :a nie zostanie znaleziony, metoda zwróci nam nil zamiast wyjątku. 
+
+4) Relatywny czas w faktorkach
+
+
+
+
+
+
+
+
+
+
+
+Linki:
+https://rollbar.com/blog/top-10-ruby-on-rails-errors/
+
+Stronka:
+https://stark-stream-99010.herokuapp.com/users/sign_in
