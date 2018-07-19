@@ -8,18 +8,18 @@ Jak myślicie, co się stanie kiedy klikniemy 'delete'? ADRES ZOSTANIE USUNIĘTY
 Uważajcie na Ajaxa i formularze asynchroniczne.
 
 2) Planowanie relacji i 'grube' widoki
-Na stronie użytkownik może zamówić sobie sprzątanie, odzwierciedlone przez model Service. Zatem stronka powinna zawierać widok, w którym użytkownik mógłby podejrzeć zamówione przez siebie wizyty. Model Service zawiera następujące zależności. SCREEN. Chcielibyśmy w widoku wyświetlać mniej więcej coś takiego. SCREEN. Niby wszystko fajnie, jednak żeby wyświetlić cleanera, musimy wyciągnąć z bazy obiekt i jego atrybuty name i surname. Podobnie dla clienta. Address? Też musimy wyciągnąć adres z bazy i sprawdzić atrybuty żeby przygotować go w takiej ładnej postaci. Czyli już mamy cztery powiązane ze sobą tabele, z których dane chcemy wyświetlić w widoku. Powoduje to bardzo brzydkie i wolne zapytanie.
+Stronka zawiera widok, w którym użytkownik mógłby podejrzeć zamówione przez siebie wizyty. Model Service zawiera następujące zależności. Niby wszystko fajnie, jednak żeby wyświetlić cleanera, musimy wyciągnąć z bazy obiekt i jego atrybuty name i surname. Podobnie dla clienta. Address? Też musimy wyciągnąć adres z bazy i sprawdzić atrybuty żeby przygotować go w takiej ładnej postaci. Czyli już mamy cztery powiązane ze sobą tabele, z których dane chcemy wyświetlić w widoku. Powoduje to bardzo brzydkie i wolne zapytanie.
 Uwaga na to, co chcemy wyświetlać i jak planujemy relacje w odniesieniu do tego.
 
 3) Dig
-Jakiś czas temu natrafiłem na artykuł na temat najczęstszych błędów w railsach. Okazało się że jednym z najczęsciej występujących błędów
-jest NoMethodError: undefined method '[]' for nil:NilClass. Jak pewnie się domyślacie, łatwo go wywołać gdy próbujemy coś wyciągnąć z zagnieżdżonych hashy. Kiedy to przeczytałem, zdałem sobie sprawę, że też mam w swoim projekcie zagnieżdżone parametry. Wspominam o tym, bo jest to 'low hanging fruit' i możemy bardzo łatwo temu zapobieć. Wystarczy zamiast wywołania [:a][:b], użyć metody .dig(:a, :b). Jeśli klucz :a nie zostanie znaleziony, metoda zwróci nam nil zamiast wyjątku. 
+Z artykułu który jakiś czas temy przeczytałem wynika, że jednym z najczęsciej występujących błędów
+jest NoMethodError: undefined method '[]' for nil:NilClass. Łatwo go wywołać gdy próbujemy coś wyciągnąć z zagnieżdżonych hashy. Bardzo łatwo temu zapobieć. Wystarczy zamiast wywołania [:a][:b], użyć metody .dig(:a, :b). Jeśli klucz :a nie zostanie znaleziony, metoda zwróci nam nil zamiast wyjątku. 
 
-4) Relatywny czas w faktorkach
+4) Planowanie relacji
+Tak jak pokazywałem wcześniej, w mojej bazie obiekt Service musi mieć przypisanego klienta i sprzątacza. Przy planowaniu relacji postanowiłem utworzyć obiekt typu User, który ma rolę trzymaną w atrybucie. Doprowadziło to do tego, że relacje w modelach wyglądają dość brzydko, zapytania do bazy również. Dodatkowo, helpery railsowe do wyciągania danych nie działają tak jak powinny. Chciałem was przestrzec przed tworzeniem relacji w ten sposób. 
 
-
-
-
+5) AngularJS Material
+Na koniec chciałem jeszcze wspomnieć, że postanowiłem dodać w jednym z widoków modal forma, datepickera i notifiera, podobnie jak mamy we flightdecku. Do tych i kilku innych drobiazgów użyłem tutaj frameworka, który nazywa się AngularJS. Pozwala w prosty i szybki sposób dodać wiele efekciarskich rzeczy, gorąco polecam.
 
 
 

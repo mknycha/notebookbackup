@@ -520,10 +520,13 @@
 	"buffers":
 	[
 		{
+			"contents": "# Tue May 22 2018\n\n**What I have done today?**\n\n1. Tried to fix rollbar error in js. Failed, added a comment and took something else.\n2. Started to work on player summary - currency updates https://bitgamelabs.atlassian.net/browse/FD-3032\n  - Problem: How to sum value of all bets in euro and return it.\n  \tAnswer: Use group_by rollup. However rails do not support roll up...\n  \t(raw query: \n  \t\t\"select SUBSTRING(currency from 1 for 3), SUM(0 - return_amount) as revenue, SUM(0 - return_amount * exchange_rate) as eur from sports_bets where currency is not null GROUP BY ROLLUP (1);\")\n\n **To do tomorrow**\n\n 1. Update wiki on withdrawals based on stuff I have added\n 2. Fix PR after Jacek's review\n 3. Currency updates:\n \t\t\tRewrite query in revenue_by_date file to sql to add a rollup and another column with amount calculated to eur.\n\n# Wed May 23 16:27:54 2018\n\n**What I have done today?**\n\n- Done review for Krzysztof\n- Made some small changes to the PRs reviewed by Jacek\n- Player summary - currency updates\n\t- Query used in player revenue calculation - added additional column multiplying revenue by base currency\n\t- Queries/reports calculating bets summaries - started to work on those, changed the first report and the columns in summary class\n\n**To do tomorrow**\n\n- Player summary - currency updates\n\t- Check Jiten's response in Jira\n\t- Query used in player revenue calculation: rename columns added from '_eur' to '_base_curr'\n\t- Queries/reports calculating bets summaries: change the queries to include turnover and revenue in eur\n- Update wiki on withdrawals based on stuff I have added (hopefully)\n\n# Wed May 24 2018\n\n**What I have done today?**\n\n- Player summary - currency updates\n\t- Fix specs of backend queries\n\t- Download data once for all the components, and pass it to them (right now each component downloads the data for itself when it's needed)\n\n**To do tomorrow**\n\n- Player summary - currency updates\n\t- Work out how to create summary table for sum of revenue in eur\n\t\n# Fri May 25 08:17:34 2018\n\n**Learned**\n- To iterate with index in coffeescript:\n\t\t```\n\t\tfor value, index in list\n\t\t\tconsole.log value, index\n\t\t```\n- `angular.extend(dst, src)` creates a shallow copy, `angular.merge(dst, src)` creates a deep copy\n- ```\n\tfor (i = 1; i <= 5; ++i) {\n\t  setTimeout(function(){\n\t    console.log(i);\n\t  }, 1000);\n\t}\n\t```\n\treturns 5 times '6', because of the cached value returned by the promise, but:\n\t```\n\tfor (i = 1; i <= 5; ++i) {\n\t  (function(i) { setTimeout(function(){\n\t    console.log(i);\n\t  }, 1000)})(i)\n\t}\n\t```\n\treturns 1,2,3,4,5, because function is evaluated each time\n\n**What I have done today?**\n\n- Player summary - currency updates\n\t- Worked out how to create summary table and sum of revenues in eur\n\t- Fixed issue with formatting summaries and charts in the front end\n\t- Fetch the data asynchronously, get the result with proper currency\n\n**To do the following day**\n\n- Player summary - currency updates\n\t- Why one of the summaries display turnover and average bets with 2 digits precision, and not 4 like the others?\n\t- Fix the spinner\n\t- Pass base currency from the settings\n\t- Display currency in the chart title\n\n# Mon May 28 08:50:07 2018\n\n**What I have done today?**\n\n- Player summary - currency updates\n\t- Why one of the summaries display turnover and average bets with 2 digits precision, and not 4 like the \tothers? - because EUR must be passed as string\n\t- Pass base currency from the settings\n\t- Display currency in the chart title\n\t- Do not display summary table when player has only one currency and it's EUR\n\t- Fixed spinner\n- Code review for Kamil\n\n**To do the following day**\n\n- Update wiki on withdrawals\n\n# Tue May 29 16:40:47 2018\n\n**What I have done today?**\n\n- Updated wiki on withdrawals\n- Fixed bug with incorrect param name\n- Player summary - currency updates - Started to work on review comments\n\n**To do the following day**\n\n- Fixes to PRs (create a feature flag for bugfix, since it needs to be tested on int)\n- Fix DB, because it got f****ed up\n\n# Wed May 30 12:54:04 2018\n\n**Learned**\n- In Javascript, both `Number((1.005).toFixed(2));` and `Math.round(1.005*100)/100;` round incorrectly: returns 1 instead of 1.01.\n\tRounding the proper way:\n\t```Number(Math.round(1.005+'e2')+'e-2'); // 1.01```\n\tIn flightdeck, we already have filters for rounding properly in the view.\n\n**What I have done today?**\n\n- Bug fix with incorrect param name\n\t- tested\n- Player summary - currency updates\n\t- uploaded fixes to review\n- Export all casino bets is not working on casino overview page\n\t- It looks like someone named mknycha changed the partial used in two places and test it only it one. In other it did not work... (-_-)\n\t\tUnder casino bets overview, ng-click should be changed to ng-href, only then the link for csv report will work\n\n**To do the following day**\n\n- Export all casino bets is not working on casino overview page\n\t- Make the partial work in both places\n\n# Fri Jun  1 16:12:18 2018\n\n- Test all the views where the partial `overview_export_buttons` is used:\n   - Sportsbook overview (https://flightdeck-stg.cloudbet.com/sportbook/bets/overview)\n   - Casino bets overview (https://flightdeck-stg.cloudbet.com/casino/bets/overview)\n   - Wallet transactions view (https://flightdeck-stg.cloudbet.com/wallet_transactions) - just check if the csv button is rendered\n   - Accounting affiliate (https://flightdeck-stg.cloudbet.com/accounting/affiliates/wallet_transactions) - just check if the csv button is rendered\n   - Casino tips (https://flightdeck-stg.cloudbet.com/casino/tips) - just check if the csv button is rendered\n\n**What I have done today?**\n\n- Checked the bug reported by Kamil\n- Player summary - currency updates - fixed stuff commented on review by Roman: variable names, services naming\n- Export all casino bets is not working on casino overview page\n\t- Made the partial work in both places, the problem is that there are two kind of buttons created based on variable passed to partial. Can it be simplified?\n- Started to work on Fix player/affiliate update form (withdrawal limits validations)\n\n**To do the following day**\n- Bug reported by Kamil\n\t- check if James responded on Jira\n- Player summary - currency updates\n\t- make sure it's merged\n- Export all casino bets is not working on casino overview page\n\t- Check with Wojtczal if it can be simplified somehow\n\n# Mon Jun  4 16:24:41 2018\n\n**What I have done today?**\n\n- Analytics_id not passed to authentication log for affiliates\n\t- Used warden hook to get the analytics id from cookie and saved it in the session variable\n\t- Tried to write the specs for, but no luck... there are some issues with stubbing `auth` passed to the initializer :(\n\n**To do the following day**\n\n- Player summary - currency updates\n  - PR fixes as per the comments\n- Export all casino bets is not working on casino overview page\n  - PR fixes as per the comments\n- Analytics_id not passed to authentication log for affiliates\n  - Finish the spec hopefully\n\n# Tue Jun  5 16:33:25 2018\n\n**What I have done today?**\n\n- Analytics_id not passed to authentication log for affiliates\n\t- It turned out that spec for this is not necessary\n- Player summary - currency updates\n  - PR fixes as per wojtczal comments\n\n**To do the following day**\n\n- Analytics_id not passed to authentication log for affiliates\n\t- git push?\n- Export all casino bets is not working on casino overview page\n  - PR fixes as per the comments\n\n# Tue Jun  6 16:33:25 2018\n\n* How to find intersecting keys between two object in coffeescript?\n```\ncommonKeys = Object.keys(dataA).filter (key) ->\n      dataB.hasOwnProperty(key)\n```\n\n**What I have done today?**\n\n- Player summary - currency updates - MERGED\n- Export all casino bets is not working on casino overview page - MERGED\n- Analytics_id not passed to authentication log for affiliates - opened PR\n\n# Thu Jun  7 09:04:49 2018\n\n- Admins - transaction limits\n\t- Create new settings for default credit and deposit limits\n\t- Create migration adding fields with limits to admin table\n\t- Create module CreditLimitValidations\n\t- Include the module in CreditFundForm class and Credit class\n\t- Create module BonusLimitValidation\n\t- Include the module in bonus model\n\t- Administration view\n\n* Since we will testing new way for task estimation on daily stand ups, and some people in the team (including me) want to train their skills by developing a random app after work, *maybe it’s good idea to create an app for tracking task delivery time*?\n\n**What I have done today?**\n\n- Admins - transaction limits\n\t- Create new settings for default credit and deposit limits\n\t- Create migration adding fields with limits to admin table\n\t- Created methods in the admin model for accessing credit limits\n\n**To do the following day**\n\n- Analytics_id not passed to authentication log for affiliates - make sure it's merged, test it?\n- Admins - transaction limits\n\t- Take next subtasks from the list in jira\n\n# Mon Jun 11 09:29:45 2018\n\n- Analytics_id not passed to authentication log for affiliates - tested\n• Interesting problem with 'poisoned' sql transaction in rescue clause:\n\t- https://stackoverflow.com/questions/21138207/activerecordstatementinvalid-pg-infailedsqltransaction\n• Check out gems `interactive_editor` (allows for creating and evaluating file during ruby session) and `awesome_print`. Looks quite useful.\nIn order to use interactive_editor, add gem to `.irbc` file (to use it in irb)/ Gemfile (to use in rails console). Also add your editor to gem configuration\n\n**What I have done today?**\n\n- Admins - transaction limits\n\t- Refactor methods in the admin model for accessing credit limits\n\t- Added specs for admin model\n\t- Corrected subtasks description, it turns out there are trouble\n- Pair programming with Nika\n\n**To do the following day**\n\n- Pair programming - part II\n- Admins - transaction limits\n\t- It turns out there are more concerns in the description than I thought. Rollover bonus is created by award bonus form, but also by award free spins and promotions. It is not clear when exactly to check the limits (and not to make existing bonuses blow up). Asked on Jira\n\n# Wed Jun 12 16:31:43 2018\n\n• Create custom build method for rollover bonus, validating the amount based on the source param passed to it - did not work. It looks like:\n- `build` method is defined on relation, not model. If override it one particular relation, we do not have an access to object instance (we can only pass additional params)\n- We cannot assign error to an object outside of methods used for validation. Whenever `.valid?` is called, object errors disappear and it is validated again. For instance:\n```\n[5] gaming_admin »  rb.errors.add(:tralala, 'tralalala')\n=> [\n  [0] \"tralalala\"\n]\n[6] gaming_admin »  rb.errors\n=> #<ActiveModel::Errors:0x007fe79d8806a8 @base=#<RolloverBonus id: 9, player_id: 646, amount: 0.1e8, state: \"cancelled\", rollover_requirement: 1, awarded_at: \"2018-06-12 13:35:07\", activated_at: \"2018-06-12 13:35:07\", expires_at: \"2018-06-13 13:35:07\", created_at: \"2018-06-12 13:35:07\", updated_at: \"2018-06-12 13:40:20\", award_maximum: 0.1e8, award_percentage: 0.1e3, affiliate_commission: nil, rollover_days_duration: 1, award_minimum: 0.1e8, source_id: 13, source_type: \"Admin\", exchange_rate: 0.2e1, currency_pair: \"BTCEUR\", comment: \"test\", cancelling_user_id: 13, cancelling_user_type: \"Admin\", funds_transferred: nil, exhausted_at: nil, models: [\"CasinoBet\"], sportsbook_minimum_price: nil, promotion_id: nil>, @messages={:tralala=>[\"tralalala\"]}>\n[7] gaming_admin »  rb.valid?\n=> true\n```\n\n# Wed Jun 13 16:31:43 2018\n\n**What I have done today?**\n\n• Admins - transaction limits\n- Implemeneted validations for credit funds and award bonus (under player summary)\n\n**To do the following day**\n\n• Implement validations for bonuses/award created through promotions\n\n# Thu Jun 14 17:03:27 2018\n\n**Learned**\n- Start rails server with puma, not passenger - this way `binding.pry`/`byebug` will work, no need to use `binding.pry_remote`\n\n- For Codeship deployment private data (passwords, api keys etc.) we download the public key from codeship (if we have an access to it), and then use it to encrypt the private data and upload the encrypted data during deployment\n\n• Promotions create underlying rollover bonuses when `opt_in` method is called. The logic is in the `_reward` classes.\n\n**What I have done today?**\n\n• Admins - transaction limits\n- Partially implemented limits for bonuses/awards created through promotions. Since `source` is needed for bonus validation, I decided to pass `source` to rollover bonus as a param on creation. I tested it locally for credit funds and award bonus, it worked. I have to test it if it’s fully working in case of promotions.\n\n**To do the following day**\n\n• Admins - transaction limits\n- Check `RolloverBonus` creation. Will passing `source` on creation not break anything? (make it required if so)\n- It looks like right now promotion is passed to RolloverBonus as `promotion` attribute. Where is this attribute used? Can it be replaced with `source`, so that promotion is passed as source and used the same way?\n\n# Fri Jun 15 16:35:08 2018\n\n**Learned**\n\n- VIM: To copy stuff to system clipboard:\n\t- Use the clipboard as the default register. Command: `set clipboard=unnamed`\n\t- Select stuff, and push ‘y’\n\n• It turns out that I can assign source on bonus creation for player\n\tsummary, but I cannot do it for bonus creation from promotions. To keep\n\tthe consistency, it will be better not to rely on source, but validate\n\trollover bonus in the form used for its creation.\n\n**What I have done today?**\n\n• Admins - transaction limits\n  - As per the above, moved validation to the form. Tested in flightdeck, looks like it works.\n  - Started fixing specs\n\n**To do the following day**\n  - Fix the specs (remember about gaming_engine too) and make PR!\n\n# Mon Jun 18 16:28:17 2018\n\n**What I have done today?**\n\n- Specs, minor fixes\n- Fixed forms validations in gaming_admin\n- Started working on admin edit view, make the limits editable in there but include checkbox 'default?'\n\n**To do the following day**\n\n- Admin new/edit view, limits fields\n- Review for Krzysztof and Maciej\n\n# Tue Jun 19 16:32:34 2018\n\n**What I have done today?**\n\n- Worked on front end of admin edit view\n\n**To do the following day**\n\n- Solve the following problem: When user updates admin’s limit, how to change it back to nil when someone selects ‘use default’?\n\n- It is always possible to create a hidden form with nil param when ‘use default’ is checked, but there must be a better way in to do it in controller\n\n# Wed Jun 20 16:26:03 2018\n\n**What I have done today?**\n\n- Front end and back end for the forms for edit/new admin. It looks like it works!\n\n**To do the following day**\n\n- Admins credit limits - double check everything and make a PR\n\n# Thu Jun 21 16:38:34 2018\n\n• Exclude Agents from Affiliates data in Affiliate Commission Report\n\t- It looks like the issue lies in the query. Probably ‘group_column’ is missing in the `group_by` clause\n\t- When ‘group by’ affiliate is chosen, ‘unknown’ is shown under affiliate column. Probably because Agents have `username` assigned, while Affiliates do not\n\n**What I have done today?**\n\n- Admins credit limits - Last fixes to credit limits, created PR. Started working on comments to PR\n- Started working on an issue mentioned above\n\n**To do the following day**\n\n- Admins credit limits - comments from PR\n\n# Mon Jun 25 16:17:00 2018\n\n**What I have done today?**\n\n- Implemented relations and methods on models that will be used for daily limit validations\n\n**To do the following day**\n\n- Check previous changes to the form validation. Do these work properly for daily limit validation?\n- Assign admin to the promotion_schemes on their creation. Assign admin to the rollover_bonus on their creation only from flightdeck. *It should not be assigned for those created by promotions, otherwise promotion bonus amount will be counted twice!*\n- Specs\n\n# Tue Jun 26 16:28:20 2018\n\n**What I have done today?**\n\n- Implemented the daily limits validations, so far it looks like it’s working for credits, promotions and bonuses! :hype:\n\n**To do the following day**\n\n- Refactor. Maybe validation from files /Users/marcinknychala/bgl/gaming_engine/app/models/concerns/rollover_bonus_limits_validations.rb and /Users/marcinknychala/bgl/gaming_engine/app/models/concerns/promotion_validations.rb can be moved into one module/service? :thinking:\n- Clean the previous changes, especially from forms creation and translations\n- Respond/handle all PR comments\n- Specs\n\n# Thu Jun 28 17:17:50 2018\n\n**What I have done today?**\n\n- Limits - refactored code, fixed specs, improved it according to the comments in PR under gaming_admin. Also written additional specs under gaming_engine\n\n**To do the following day**\n\n- Write additional tests under gaming_admin\n- PR comments from gaming_engine\n- TODO: Create a separate task for validation of limits for PromotionScheme with destination ‘promotion-integration-service’\n- TODO: Create/update task in Jira for connecting withdrawal limits to base currency instead of hardcoded EUR - mention code to refactor under app/models/concerns/withdrawal_limit_concern.rb (edited)\n\n# Fri Jun 29 16:43:51 2018\n\n**Learned**\n\n• Responsibilities - Focus more on planning tasks. Not always task description is the best solution that can be applied. Good dev needs to think ahead and know what will be the impact of these changes, and propose a better solution if possible. If client wants a shopping mall, he does not need to know what material should be used for the building - it's up to the builder!\n\n**What I have done today?**\n\n- Limits - PRs are ready! :hype:\n- Code review for Krzysztof\n\n**To do the following day**\n\n- Pair programming with Krzysztof\n\n# Tue Jul  3 16:39:23 2018\n\n**Learned**\n\n• iTerm: Cmd + Shift + K -> clear the console window apart from what’s visible\n\n**What have I done today?**\n\n- Bug with commissions report for affiliates/agents - created PR\n- Credit and bonus limits - started working on comments and applied fixes…\n\n**To do the following day**\n\n- Credit and bonus limits - hope to finish :sad_pepe:\n\n# Fri Jul  6 09:05:12 2018\n\nTesting credit and bonus limits\n\n1) Go to the edit page of your logged in admin. I.e.: https://flightdeck-int.cloudbet.com/admins/16/edit. Below you should see admin limits fields: Manual credit limit, manual credit 24h limit, bonus credit limit, bonus credit 24h limit.\n - All the checkboxes 'use default' should be checked by default.\n - For any limit: if 'use default' is checked, there should be visible value from the corresponding setting and the field should be disabled. All the credit limits settings are stored under key_namespace 'payment::credit::limits'. For instance for manual credit limit the setting key will be 'admin_manual_credit_limit'.\n If user clicks save when 'use default is checked', it should save nil for particular field in db (see screenshot)\n - For any limit: if 'use default' is not checked, the limit field should be ready for user input. User should not be able to save the form with empty limit field or negative limit value. Once the value is put and saved, limit should be saved under corresponding field in the db (see screenshot)\nIt would good for you to write those limits somewhere or open this view in a separate window.\n2) Let's validate crediting funds by admin. Go to any player's summary page (i.e.: https://flightdeck-int.cloudbet.com/players/169/summary), then 'actions' -> 'credit funds'. You should not be able credit more funds than your manual credit limit. You also should not be able to credit more funds in 24h than your manual credit 24h limit. Please note that the limit value is in reporting currency. For instance, if you choose to credit 1 BTC, and the reporting currency is eur, the limit should converted to BTC and then compared. (reporting currency can be found under setting key_namespace: accounting, and key: 'currency')\n3) Award bonus through flightdeck - in player summary page select 'actions' -> 'award bonus'.\n - If you do not choose 'award on next deposit', you should not be able to save bonus with amount higher than the bonus credit limit. If you have already given bonus to different player, it should not be higher than bonus credit 24h limit.\n - If you do choose 'award on next deposit', you should not be able to save bonus with (award_maximum * award_percentage / 100) higher than the bonus credit limit. If you have already given bonus to different player, it should not be higher than bonus credit 24h limit.\n - Please make sure to test the above steps for both 'award on next deposit' bonus, and instantly awarded bonus.\n4) Bonuses awarded through promotions\n - First, create a new promotion scheme: go to https://flightdeck-int.cloudbet.com/promotions/new, as type of promotion select deposit bonus or free bonus. As scheme destination select flightdeck. If you have chosen deposit bonus, (award maximum * award percentage / 100) will be compared to the bonus credit limit. If you have chosen free bonus, amount will be compared to the bonus credit limit. Bonus credit 24h limits are compared the same way. Fill out other fields and save promotion scheme.\n - Now, go to player summary page. Choose 'actions' -> 'grant promotion'.\n - Select promotion scheme you have created. If the bonus for that promotion scheme exceeds any of the bonus credit limits, it should not be created.\n - Please make sure to test the above steps both for promotion type 'deposit bonus' and 'free bonus'\n\n# Wed Jul 18 16:51:47 2018\n\n**What have I done today?**\n\n- Credit and bonus limits - merged and tested everything, fixed migrations. Waiting for QA\n- Bestimate - discussion. How to divide tasks?\n- Withdrawal summary does not report anything - started working on this. When I wanted to test the concerned view and add some withdrawals, int.flighdeck did not work\n\n**To do the following day**\n\n- Withdrawal summary does not report anything - continue looking for the root cause\n- Bump engine to include migration fixes!\n\n# Thu Jul 19 16:30:17 2018\n\n\n**What have I done today?**\n\n- Withdrawal summary does not report anything - I have found out, that \n\n**To do the following day**\n\n- Withdrawal summary does not report anything - continue looking for the root cause\n- Bump engine to include migration fixes!",
 			"file": "diary/may18.md",
+			"file_size": 22123,
+			"file_write_time": 131763991850000000,
 			"settings":
 			{
-				"buffer_size": 24323,
+				"buffer_size": 22339,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -532,7 +535,7 @@
 			"file": "Prezka",
 			"settings":
 			{
-				"buffer_size": 3041,
+				"buffer_size": 3419,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "Prezka"
@@ -550,6 +553,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"insert",
+				"InsertDate: Default"
+			],
 			[
 				"inser",
 				"InsertDate: Default"
@@ -569,10 +576,6 @@
 			[
 				"mark",
 				"Markdown HTML Preview"
-			],
-			[
-				"insert",
-				"InsertDate: Default"
 			],
 			[
 				"markdo",
@@ -1014,7 +1017,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -1046,7 +1049,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1055,20 +1058,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24323,
+						"buffer_size": 22339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18138,
-								18138
+								22183,
+								22183
 							]
 						],
 						"settings":
 						{
 							"SL.13.region_keys":
+							[
+							],
+							"SL.171.region_keys":
 							[
 							],
 							"SL.353.region_keys":
@@ -1088,10 +1094,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2369.0,
+						"translation.y": 7762.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1100,15 +1106,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3041,
+						"buffer_size": 3419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3040,
-								3040
+								3289,
+								3289
 							]
 						],
 						"settings":
@@ -1124,7 +1130,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
