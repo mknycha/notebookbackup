@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 34527,
+				"buffer_size": 34903,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -1055,7 +1055,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34527,
+						"buffer_size": 34903,
 						"regions":
 						{
 						},
@@ -1094,7 +1094,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2606.0,
+						"translation.y": 3150.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1715,7 +1715,7 @@
 		[
 			[
 				"",
-				"~/bgl/gaming_admin.sublime-project"
+				"~/betting.sublime-project"
 			],
 			[
 				"bit gam",

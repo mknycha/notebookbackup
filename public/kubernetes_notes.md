@@ -1,0 +1,3 @@
+ - Pod - basic unit for all of the workloads you run on Kubernetes. Group of containers sharing some stuff (storage, IP, etc.). Deployment creates Pods.
+ - Node - Pod always run on a Node. Pod is tied to the Node where it is scheduled, and remains there until termination (according to restart policy) or deletion. Can be VM or physical machine.
+ - Kubectl - command line interface for kubernetes
