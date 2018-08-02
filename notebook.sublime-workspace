@@ -523,19 +523,27 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 34903,
+				"buffer_size": 35723,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Prezka",
+			"file": "public/kubernetes_notes.md",
 			"settings":
 			{
-				"buffer_size": 3419,
+				"buffer_size": 396,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "Prezka"
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/docker_notes.md",
+			"settings":
+			{
+				"buffer_size": 731,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -550,6 +558,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"inse",
+				"InsertDate: Default"
+			],
 			[
 				"inser",
 				"InsertDate: Default"
@@ -568,10 +580,6 @@
 			],
 			[
 				"insert ",
-				"InsertDate: Default"
-			],
-			[
-				"inse",
 				"InsertDate: Default"
 			],
 			[
@@ -878,11 +886,14 @@
 	[
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/diary",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/public",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook/docs"
 	],
 	"file_history":
 	[
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/public/docker_notes.md",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/Prezka",
 		"/Users/marcinknychala/Desktop/journal_copy.md",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook/settings.json",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/manager.py",
@@ -1008,9 +1019,7 @@
 		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_requests_controller.coffee",
 		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/_tags_tab.html.erb",
 		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/competition_grades/competition_grades_controller.coffee",
-		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/competition_grades/index.html.erb",
-		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/show.html.erb",
-		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/shared/general_data_load_controller.coffee"
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/competition_grades/index.html.erb"
 	],
 	"find":
 	{
@@ -1046,7 +1055,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1055,15 +1064,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34903,
+						"buffer_size": 35723,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								26395,
+								26395
 							]
 						],
 						"settings":
@@ -1094,43 +1103,69 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3150.0,
+						"translation.y": 4243.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Prezka",
+					"file": "public/kubernetes_notes.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3419,
+						"buffer_size": 396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3289,
-								3289
+								396,
+								396
 							]
 						],
 						"settings":
 						{
-							"SL.35.region_keys":
-							[
-							],
-							"auto_name": "Prezka",
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"open_with_edit": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/docker_notes.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								731,
+								731
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1715,7 +1750,7 @@
 		[
 			[
 				"",
-				"~/betting.sublime-project"
+				"~/bgl/integration-promotions-service.sublime-project"
 			],
 			[
 				"bit gam",
@@ -1748,7 +1783,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":
