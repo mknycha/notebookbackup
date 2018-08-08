@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 35723,
+				"buffer_size": 28546,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -559,11 +559,11 @@
 		"selected_items":
 		[
 			[
-				"inse",
+				"inser",
 				"InsertDate: Default"
 			],
 			[
-				"inser",
+				"inse",
 				"InsertDate: Default"
 			],
 			[
@@ -1055,7 +1055,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1064,15 +1064,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35723,
+						"buffer_size": 28546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26395,
-								26395
+								27493,
+								27493
 							]
 						],
 						"settings":
@@ -1103,10 +1103,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4243.0,
+						"translation.y": 9984.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1165,7 +1165,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1783,7 +1783,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":
