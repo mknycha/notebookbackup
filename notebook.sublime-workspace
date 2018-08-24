@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 38227,
+				"buffer_size": 39927,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -1062,15 +1062,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 38227,
+						"buffer_size": 39927,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32066,
-								32066
+								29679,
+								29679
 							]
 						],
 						"settings":
@@ -1101,7 +1101,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3031.0,
+						"translation.y": 3218.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1126,6 +1126,9 @@
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+							],
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
@@ -1156,6 +1159,9 @@
 						],
 						"settings":
 						{
+							"SL.15.region_keys":
+							[
+							],
 							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
@@ -1748,7 +1754,7 @@
 		[
 			[
 				"",
-				"~/bgl/integration-promotions-service.sublime-project"
+				"~/bgl/gaming_admin.sublime-project"
 			],
 			[
 				"bit gam",
@@ -1781,7 +1787,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":
