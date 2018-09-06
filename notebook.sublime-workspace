@@ -523,7 +523,7 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 42411,
+				"buffer_size": 44187,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -559,11 +559,11 @@
 		"selected_items":
 		[
 			[
-				"inse",
+				"inser",
 				"InsertDate: Default"
 			],
 			[
-				"inser",
+				"inse",
 				"InsertDate: Default"
 			],
 			[
@@ -1062,15 +1062,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 42411,
+						"buffer_size": 44187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								32718,
+								32718
 							]
 						],
 						"settings":
@@ -1101,7 +1101,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3512.0,
+						"translation.y": 3716.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1222,7 +1222,7 @@
 	"project": "notebook.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
