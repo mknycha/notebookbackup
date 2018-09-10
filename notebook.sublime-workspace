@@ -519,33 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "diary/may18.md",
-			"settings":
-			{
-				"buffer_size": 44187,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/kubernetes_notes.md",
-			"settings":
-			{
-				"buffer_size": 396,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/docker_notes.md",
-			"settings":
-			{
-				"buffer_size": 731,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -559,11 +532,11 @@
 		"selected_items":
 		[
 			[
-				"inser",
+				"inse",
 				"InsertDate: Default"
 			],
 			[
-				"inse",
+				"inser",
 				"InsertDate: Default"
 			],
 			[
@@ -891,6 +864,8 @@
 	"file_history":
 	[
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/public/docker_notes.md",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/public/kubernetes_notes.md",
+		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/diary/may18.md",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/Prezka",
 		"/Users/marcinknychala/Desktop/journal_copy.md",
 		"/Users/marcinknychala/Applications/SublimeNotebook_v2.1/sublime_notebook/settings.json",
@@ -1015,9 +990,7 @@
 		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/templates/players/summary/summary_tab.html",
 		"/Users/marcinknychala/bgl/gaming_admin/spec/forms/sportbook/update_regrade_request_form_spec.rb",
 		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/regrade_requests/regrade_requests_controller.coffee",
-		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/_tags_tab.html.erb",
-		"/Users/marcinknychala/bgl/gaming_admin/app/assets/javascripts/angular/components/sportbook/competition_grades/competition_grades_controller.coffee",
-		"/Users/marcinknychala/bgl/gaming_admin/app/views/sportbook/competition_grades/index.html.erb"
+		"/Users/marcinknychala/bgl/gaming_admin/app/views/players/summary/_tags_tab.html.erb"
 	],
 	"find":
 	{
@@ -1053,125 +1026,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "diary/may18.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 44187,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32718,
-								32718
-							]
-						],
-						"settings":
-						{
-							"SL.13.region_keys":
-							[
-							],
-							"SL.171.region_keys":
-							[
-							],
-							"SL.299.region_keys":
-							[
-							],
-							"SL.353.region_keys":
-							[
-							],
-							"SL.471.region_keys":
-							[
-							],
-							"SL.514.region_keys":
-							[
-							],
-							"SL.648.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3716.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "public/kubernetes_notes.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 396,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								396,
-								396
-							]
-						],
-						"settings":
-						{
-							"SL.14.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": true,
-							"open_with_edit": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/docker_notes.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 731,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								731,
-								731
-							]
-						],
-						"settings":
-						{
-							"SL.15.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
