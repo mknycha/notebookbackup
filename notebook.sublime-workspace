@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "diary/may18.md",
+			"settings":
+			{
+				"buffer_size": 46691,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -532,6 +540,10 @@
 		"selected_items":
 		[
 			[
+				"ins",
+				"InsertDate: Default"
+			],
+			[
 				"inse",
 				"InsertDate: Default"
 			],
@@ -541,10 +553,6 @@
 			],
 			[
 				"in",
-				"InsertDate: Default"
-			],
-			[
-				"ins",
 				"InsertDate: Default"
 			],
 			[
@@ -1026,8 +1034,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "diary/may18.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34470,
+								34470
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4000.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1087,6 +1125,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"diary/may18.md"
+			],
 			[
 				"contro",
 				"app/controllers/affiliates_controller.rb"
@@ -1594,10 +1636,6 @@
 			[
 				"applic",
 				"app/policies/application_policy.rb"
-			],
-			[
-				"taglines",
-				"app/controllers/api/taglines_controller.rb"
 			]
 		],
 		"width": 0.0
@@ -1610,7 +1648,7 @@
 		[
 			[
 				"",
-				"~/bgl/gaming_admin.sublime-project"
+				"~/bgl/integration-promotions-service.sublime-project"
 			],
 			[
 				"bit gam",
