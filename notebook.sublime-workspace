@@ -523,8 +523,20 @@
 			"file": "diary/may18.md",
 			"settings":
 			{
-				"buffer_size": 46691,
+				"buffer_size": 47887,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nGitGutter\n---------\n\n  1.9.3:\n  \n    Enhancement:\n     - Disable line annotation for uncommitted content (#517)\n  \n    Fix:\n     - Disable line annotations if content is centered (#514)\n  \n  \n  💛 Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  +------------------------------------------------+\n  |                                                |\n  |   Use the coupon code GITGUTTER for $10 off    |\n  |                                                |\n  +------------------------------------------------+\n  \n  🏅 ⭐ ES6 ⭐\n  \n  👉 ES6.io/friend/GITGUTTER\n  \n  🏅 ⭐ Sublime Text Book ⭐\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  \n  🏅 ⭐ React For Beginners ⭐\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  \n  \n  Join 15,000 other developers already learning with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n",
+			"settings":
+			{
+				"buffer_size": 953,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -540,15 +552,15 @@
 		"selected_items":
 		[
 			[
+				"inser",
+				"InsertDate: Default"
+			],
+			[
 				"ins",
 				"InsertDate: Default"
 			],
 			[
 				"inse",
-				"InsertDate: Default"
-			],
-			[
-				"inser",
 				"InsertDate: Default"
 			],
 			[
@@ -1034,7 +1046,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1043,24 +1055,57 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 46691,
+						"buffer_size": 47887,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34470,
-								34470
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4000.0,
+						"translation.y": 4680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								744,
+								744
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "/Users/marcinknychala/Applications/SublimeNotebook_v2.1/diary",
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
