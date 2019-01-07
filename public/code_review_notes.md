@@ -19,7 +19,7 @@ Main source: https://medium.com/palantir/code-review-best-practices-19e02780015f
  * Think about how you would solve the problem
  * Is the goal clear and documented? If the jira ticket does not contain full description, maybe it can be added at least in the PR description?
  * **Read the tests**. Are they understandable? Do they cover all the cases?
- * "When you’re done with a code review, indicate to what extent you expect the author to respond to your comments and whether you would like to re-review the CR after the changes have been implemented (e.g., “Feel free to merge after responding to the few minor suggestions” vs. “Please consider my suggestions and let me know when I can take another look.”)."
+ * _When you’re done with a code review, indicate to what extent you expect the author to respond to your comments and whether you would like to re-review the CR after the changes have been implemented (e.g., “Feel free to merge after responding to the few minor suggestions” vs. “Please consider my suggestions and let me know when I can take another look.”)._
  
 ### How to prepare my PRs?
  * Rember about self review and testing before opening PR
