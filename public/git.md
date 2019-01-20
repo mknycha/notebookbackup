@@ -13,3 +13,6 @@
 - you can configure environment for writing commit messages:
   - `git config --global core.editor "subl -w"` -> opens up sublime for editing commits
   - `git config --global commit.verbose true` -> this shows the diff changes in the editor window
+
+- changing name of the current branch:
+  - `git branch -m branch-new-name`
