@@ -17,3 +17,5 @@
 - changing name of the current branch: `git branch -m branch-new-name`
 
 - list untracked files (returns just list of files): `git ls-files --others --exclude-standard`
+
+- stash only some code or some files (patch): `git stash save -p "my commit message"`
