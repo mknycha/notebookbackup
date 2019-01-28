@@ -6,6 +6,9 @@
 - Get new lines from a file with changing content (useful for printing logs)<sup>1</sup>
   - `tail -f /var/log/mail.log`
   
+- List process under port 8090
+  - `lsof -i:8090`
+  
   
   
 
