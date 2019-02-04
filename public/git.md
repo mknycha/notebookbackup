@@ -18,6 +18,8 @@
 
 - stash only some code or some files (patch): `git stash save -p "my commit message"`
 
+- checkout the content (diff) of last stash: `git stash show --patch` 
+
 ### Config
 
 - do not keep the files backup files after commiting merge (`.orig` files): `git config --global mergetool.keepBackup false`
