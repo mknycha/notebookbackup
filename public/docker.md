@@ -9,9 +9,10 @@
 
 • `docker rm -v mycontainer` -> removes mycontainer along with the volume (omitting v flag does not remove the volume)
 
-• `docker run -p 8080:3000 -v $(pwd):/var/www -w "/var/www" node npm start` -> apart from the above, run `npm start` in the directory `/var/www` inside the container
-    
-    - `-d` - run in detached mode (gives back the control to the console)
+- `docker run -p 8080:3000 -v $(pwd):/var/www -w "/var/www" node npm start` -> apart from the above, run `npm start` in the directory `/var/www` inside the container
+  - `-d` - run in detached mode (gives back the control to the console)
+  - `-it` - run in an interactive mode
+  - `--link my-mysql-name:mysql` - link container named `my-mysql-name` to `mysql` within that container (legacy linking)
 
 • `docker build -t <your username>/node .` -> builds an image with a tag provided based on Dockerfile. `.` is the build context
 
