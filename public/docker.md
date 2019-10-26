@@ -40,3 +40,24 @@ EXPOSE 3000               # Exposes container on the port 3000. We can also go w
 
 ENTRYPOINT ["npm", "start"] # Note the best way to go is write it as a JSON array
 ```
+
+## Running containers in a network (linking)
+
+Cockroach db example.
+Let's create a bridge and run several nodes.
+```
+docker network create -d bridge roachnet
+```
+```
+docker run -d --name=roach1 --hostname=roach1 --net=roachnet -p 26257:26257 -p 8080:8080  -v "${PWD}/cockroach-data/roach1:/cockroach/cockroach-data"  cockroachdb/cockroach:v19.1.5 start --insecure
+```
+```
+docker run -d --name=roach2 --hostname=roach2 --net=roachnet -v "${PWD}/cockroach-data/roach2:/cockroach/cockroach-data" cockroachdb/cockroach:v19.1.5 start --insecure --join=roach1
+```
+```
+docker run -d --name=roach3 --hostname=roach3 --net=roachnet -v "${PWD}/cockroach-data/roach3:/cockroach/cockroach-data" cockroachdb/cockroach:v19.1.5 start --insecure --join=roach1
+```
+Now we can run the container in the same network:
+```
+docker run --net=roachnet my-docker-image
+```
