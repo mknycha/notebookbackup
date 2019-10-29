@@ -61,3 +61,21 @@ Now we can run the container in the same network:
 ```
 docker run --net=roachnet my-docker-image
 ```
+
+## Docker compose
+- docker-compose.yml -> defines all the services. The service is something to we run in a container - PHP, node.js, redis etc.
+- build process generates the images (services) based on docker-compose.yml
+- configuration options:
+  - build - build context, docker file used etc.
+  - environment variables
+  - image
+  - networks - define networks to link things up
+  - ports
+  - volumes
+- commands:
+  - `build` -> builds the images. Use `build service_name` to build only paritulcar service 
+  - `up` -> start the containers
+  - `down` -> take the containers down
+  - `logs`
+  - `ps`
+  - `rm`
