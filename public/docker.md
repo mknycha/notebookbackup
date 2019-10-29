@@ -79,3 +79,43 @@ docker run --net=roachnet my-docker-image
   - `logs`
   - `ps`
   - `rm`
+  
+
+## docker-compose.yml example
+This file runs all the above cockroach nodes at once, and wihtin a network `tradingbot_roachnet`
+```
+version: '2.1'
+
+services:
+  roach1:
+    container_name: roach1
+    image: cockroachdb/cockroach:v19.1.5
+    networks:
+      - roachnet
+    ports:
+      - "26257:26257"
+      - "8080:8080"
+    volumes:
+      - "${PWD}/cockroach-data/roach1:/cockroach/cockroach-data"
+    command: start --insecure
+  roach2:
+    container_name: roach2
+    image: cockroachdb/cockroach:v19.1.5
+    networks:
+      - roachnet
+    volumes:
+      - "${PWD}/cockroach-data/roach2:/cockroach/cockroach-data"
+    command: start --insecure --join=roach1
+  roach3:
+    container_name: roach3
+    image: cockroachdb/cockroach:v19.1.5
+    networks:
+      - roachnet
+    volumes:
+      - "${PWD}/cockroach-data/roach3:/cockroach/cockroach-data"
+    command: start --insecure --join=roach1
+
+networks:
+  roachnet:
+    driver: bridge
+```
