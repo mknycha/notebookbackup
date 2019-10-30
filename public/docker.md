@@ -18,6 +18,8 @@
 
 • `docker build -f Dockerfile -t tag .` -> builds an image based on the dockerfile passed under f flag
 
+• `docker rm -f $(docker ps -a -q)` -> force removing quitely all the images
+
 ## Writing dockerfiles
 
 ```
