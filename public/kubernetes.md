@@ -2,3 +2,4 @@
  - Node - Pod always run on a Node. Pod is tied to the Node where it is scheduled, and remains there until termination (according to restart policy) or deletion. Can be VM or physical machine.
  - Kubectl - command line interface for kubernetes
  - Kubernetes always runs some **Master Node**, this node has some **children nodes** (they work like separate VMs), on each child node there is a **pod** (think of it as a container for containers).
+ - Service - can act as a middle man, allowing the consumers to address pod even when it goes down and up and it's IP has changed.
