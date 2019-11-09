@@ -34,7 +34,7 @@
  - NodePort - exposes the app outside of the cluster (on top of the above)
 
 ## Deployment:
-- Feature-rich abstraction for managing replication controllers. Allows for simple updates and rollbacks.
+- Feature-rich abstraction for managing replica sets (replication controllers?). Allows for simple updates and rollbacks.
 
 ## Example files:
 - Create a pod:
