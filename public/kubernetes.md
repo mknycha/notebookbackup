@@ -36,6 +36,13 @@
 ## Deployment:
 - Feature-rich abstraction for managing replica sets (replication controllers?). Allows for simple updates and rollbacks.
 
+## DaemonSet:
+- Daemon set ensures a copy of a Pod is running across a set of nodes in a Kubernetes cluster
+- When we have a stateless app decoupled from a node that we can replicate -> use ReplicaSet
+- When we have an app of which single copy should run on each node or subset of nodes -> use DaemonSet
+- By default, DaemonSet creates pod on every node in the cluster. We can limit nodes using node selector.
+- Update -> after version 1.6 use rolling update
+
 ## Example files:
 - Create a pod:
 ```
@@ -119,3 +126,8 @@ spec:
 
 ## Commands:
 - `kubectl expose rc hello-rc --name=hello-svc --target-port=8080 --type=NodePort` - wrap replication controller in a service and expose it on port 8080 (create a service manually)
+
+
+Resources:
+- "Kubernetes Up and Running" book
+- "Getting started with Kubernetes" course by Nigel Poulton on Pluralsight
