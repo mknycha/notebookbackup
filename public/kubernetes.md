@@ -35,6 +35,12 @@
 
 ## Deployment:
 - Feature-rich abstraction for managing replica sets (replication controllers?). Allows for simple updates and rollbacks.
+- Some features: easily move from one version of the code to the next one, use health checks to verify if the deployed application works as it should, wait for configurable amount of time between upgrading each pod.
+- Stores the revision history (its size is configurable) so you can rollback (cmd: `rollback undo`)
+- There are two deployment strategies:
+ a) Recreate - terminates all the pods at once and recreates them. Fast and simple but (usually) causes downtime.
+ b) RollingUpdate - updates pods incrementally, a few at the time. Takes more time but it's more robust and does not cause downtime. Since this means that for a short while we will have some pods running old version and some running new version, **make sure that the pods you are updating are compatible with other parts of the app** (e.g. if we are updating backend API, will it be a problem when our frontend calls one time API v1 and the other time API v2?)
+- You cannot have less pods running than the current number? Set `maxUnavailable` to 0%, and `maxSurge` to more than 0%. This way deployment will first create a new pod before removing the old one.
 
 ## DaemonSet:
 - Daemon set ensures a copy of a Pod is running across a set of nodes in a Kubernetes cluster
@@ -131,3 +137,6 @@ spec:
 Resources:
 - "Kubernetes Up and Running" book
 - "Getting started with Kubernetes" course by Nigel Poulton on Pluralsight
+
+## Why is helm important to Kubernetes?
+https://boxboat.com/2018/09/19/helm-and-kubernetes-deployments/
