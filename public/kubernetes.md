@@ -38,8 +38,8 @@
 - Some features: easily move from one version of the code to the next one, use health checks to verify if the deployed application works as it should, wait for configurable amount of time between upgrading each pod.
 - Stores the revision history (its size is configurable) so you can rollback (cmd: `rollback undo`)
 - There are two deployment strategies:
- a) Recreate - terminates all the pods at once and recreates them. Fast and simple but (usually) causes downtime.
- b) RollingUpdate - updates pods incrementally, a few at the time. Takes more time but it's more robust and does not cause downtime. Since this means that for a short while we will have some pods running old version and some running new version, **make sure that the pods you are updating are compatible with other parts of the app** (e.g. if we are updating backend API, will it be a problem when our frontend calls one time API v1 and the other time API v2?)
+  - Recreate - terminates all the pods at once and recreates them. Fast and simple but (usually) causes downtime.
+  - RollingUpdate - updates pods incrementally, a few at the time. Takes more time but it's more robust and does not cause downtime. Since this means that for a short while we will have some pods running old version and some running new version, **make sure that the pods you are updating are compatible with other parts of the app** (e.g. if we are updating backend API, will it be a problem when our frontend calls one time API v1 and the other time API v2?)
 - You cannot have less pods running than the current number? Set `maxUnavailable` to 0%, and `maxSurge` to more than 0%. This way deployment will first create a new pod before removing the old one.
 
 ## DaemonSet:
@@ -48,6 +48,13 @@
 - When we have an app of which single copy should run on each node or subset of nodes -> use DaemonSet
 - By default, DaemonSet creates pod on every node in the cluster. We can limit nodes using node selector.
 - Update -> after version 1.6 use rolling update
+- _If you want to use deployments to reliably rollout your software you have to specify readiness health checks for the containers in your Pod_
+
+## Storage integration:
+- There are several ways to go here:
+  - Import the external service. You can use the current database running in your infrastructure or in a cloud provider. You deifine a service referring to an external database - either by specifing type `ExternalName` in the service spec, or defining `Endpoints` for it. There is no health check option in that case.
+  - Reliable singleton. Runs your database in one pod. In that case you would need a persistent volume, pod running the database (managed by ReplicaSet, so that it's restarted in case it goes down) and a service to expose it.
+  - Using StatefulSets. 
 
 ## Example files:
 - Create a pod:
