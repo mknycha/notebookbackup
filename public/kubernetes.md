@@ -34,13 +34,21 @@
  - NodePort - exposes the app outside of the cluster (on top of the above)
 
 ## Deployment:
+- Describe desired state of pods
 - Feature-rich abstraction for managing replica sets (replication controllers?). Allows for simple updates and rollbacks.
 - Some features: easily move from one version of the code to the next one, use health checks to verify if the deployed application works as it should, wait for configurable amount of time between upgrading each pod.
 - Stores the revision history (its size is configurable) so you can rollback (cmd: `rollback undo`)
 - There are two deployment strategies:
-  - Recreate - terminates all the pods at once and recreates them. Fast and simple but (usually) causes downtime.
+  - Recreate - terminates all the pods at once and recreates them (all olds pods are deleted before new pods can be created). Fast, simple and does not require pods compatibility with the previous version but (usually) causes downtime.
   - RollingUpdate - updates pods incrementally, a few at the time. Takes more time but it's more robust and does not cause downtime. Since this means that for a short while we will have some pods running old version and some running new version, **make sure that the pods you are updating are compatible with other parts of the app** (e.g. if we are updating backend API, will it be a problem when our frontend calls one time API v1 and the other time API v2?)
 - You cannot have less pods running than the current number? Set `maxUnavailable` to 0%, and `maxSurge` to more than 0%. This way deployment will first create a new pod before removing the old one.
+- Strategies that can be applied manually:
+  - Blue/Green deployment - create all new pods, then patch the service so that it redirects all the traffic to the new pods (if everything is fine). It causes twice as many pods in total to be created for the time of deployment.
+  - Canary deployment - same as above, but redirect the traffic gradually. 
+
+## Job:
+- Creates one or more pods in order to run a specific task reliably
+- Unlike other Kubernetes controllers, jobs manages a task up to its completion rather than to an open-ended desired state.
 
 ## DaemonSet:
 - Daemon set ensures a copy of a Pod is running across a set of nodes in a Kubernetes cluster
@@ -55,6 +63,9 @@
   - Import the external service. You can use the current database running in your infrastructure or in a cloud provider. You deifine a service referring to an external database - either by specifing type `ExternalName` in the service spec, or defining `Endpoints` for it. There is no health check option in that case.
   - Reliable singleton. Runs your database in one pod. In that case you would need a persistent volume, pod running the database (managed by ReplicaSet, so that it's restarted in case it goes down) and a service to expose it.
   - Using StatefulSets. 
+  
+## StatefulSet:
+-  manages the deployment and scaling of a set of Pods, and provides guarantees about the ordering and uniqueness of these Pods
 
 ## Example files:
 - Create a pod:
