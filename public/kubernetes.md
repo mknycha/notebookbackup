@@ -29,9 +29,25 @@
 
 ## Service:
 - Abstraction layer for the pods doing the load balancing between them. Thanks to a service we can always refer to the changing pods with a stable API. How service is associated with pods? WITH LABELS!
+- Each type is built on top of other type (e.g. NodePort creates ClusterIP under the hood)
 - Types:
- - ClusterIP - stable internal IP (default)
+ - ClusterIP - stable internal IP (default). Not available outside the cluster
  - NodePort - exposes the app outside of the cluster (on top of the above)
+ - LoadBalancer - takes care of traffic distribution accros the nodes. When it receives a traffic, it selects one node at random. Then, it uses this node IP table to send the traffic to a random Pod, it does not need to be a pod within that node - this may cause latency (Double-hop). We can make it always select a Pod within chosen Node, by setting `externalTrafficPolicy: local`. This way preserve the source client IP address, but may cause the imbalance in the traffic distribution.
+ 
+## Ingress:
+- Kind of service for services
+- It's a collection of rules that direct external inbound connections to a set of services within the cluster. Each http rule will contain a host and optionally a path. Ingress routes incoming requests based on these rules. If no host is matched, the default service is called.
+
+## GCP Cloud-native load balancing
+- Load balancing not on Node level, but on Pods level directly.
+
+## Network policy:
+- Allows to disable access from some Pods to other Pods within a cluster.
+- Policy types (could be specified in one field):
+ - Ingress - incoming traffic to the affected pods (**has nothing to do with Ingress resource**)
+ - Egress - outgoing traffic from the pods
+ - Empty policy type means that ingress is applied by default
 
 ## Deployment:
 - Describe desired state of pods
@@ -58,6 +74,18 @@
 - Update -> after version 1.6 use rolling update
 - _If you want to use deployments to reliably rollout your software you have to specify readiness health checks for the containers in your Pod_
 
+## Volume:
+- A method to attach storage to a Pod
+- Can outlive the Pod (NFS, PersistentVolume), or die when they are no longer attached (ConfigMap and Secrets).
+- Volume is stored within a Pod. It can connect to a persistent data storage, but we would need to specify it in the Pod manifest, which is not flexible.
+- PersistentVolume is stored outside of the Pod, but we need a PersistentVolumeClaim within a Pod to access it. PersistentVolume allows to decouple storage administration from application configuration.
+- StorageClass - set of characteristics with a name assigned
+- Need high availability of persistent disk? Try setting in the StorageClass
+```
+replication-type: regional-pd
+zone: some-regional-zone-1, some-regional-zone-2
+```
+
 ## Storage integration:
 - There are several ways to go here:
   - Import the external service. You can use the current database running in your infrastructure or in a cloud provider. You deifine a service referring to an external database - either by specifing type `ExternalName` in the service spec, or defining `Endpoints` for it. There is no health check option in that case.
@@ -66,6 +94,8 @@
   
 ## StatefulSet:
 -  manages the deployment and scaling of a set of Pods, and provides guarantees about the ordering and uniqueness of these Pods
+- each Pod in a StatefulSet has ordinal index (unique sequence number assigned to this pod), stable hostname and stably indentified storage.
+- Uses unique volume claim for each storage. This way each Pod can have individual state.
 
 ## Example files:
 - Create a pod:
