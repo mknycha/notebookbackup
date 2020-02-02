@@ -97,6 +97,12 @@ zone: some-regional-zone-1, some-regional-zone-2
 - each Pod in a StatefulSet has ordinal index (unique sequence number assigned to this pod), stable hostname and stably indentified storage.
 - Uses unique volume claim for each storage. This way each Pod can have individual state.
 
+## ConfigMap:
+- decouples configuration from the pod
+- can be defined with a manifest file, passing a file, specify a directory or a name for file path
+- ConfigMap can be used in a Pod as a container environment variable, in a pod command, or by creating a volume
+- Can be updated within a Pod when created through a volume
+
 ## Example files:
 - Create a pod:
 ```
