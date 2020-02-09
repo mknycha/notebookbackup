@@ -186,6 +186,7 @@ spec:
 
 ## Commands:
 - `kubectl expose rc hello-rc --name=hello-svc --target-port=8080 --type=NodePort` - wrap replication controller in a service and expose it on port 8080 (create a service manually)
+- `kubectl logs --since=3h [POD_NAME]` -> print the logs from most recent 3 hours
 
 
 Resources:
