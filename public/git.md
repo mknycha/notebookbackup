@@ -27,3 +27,10 @@
 - you can configure environment for writing commit messages:
   - `git config --global core.editor "subl -w"` -> opens up sublime for editing commits
   - `git config --global commit.verbose true` -> this shows the diff changes in the editor window
+
+### Commits
+
+- Squash all commits on branch:
+  - Checkout branch
+  - `git reset $(git merge-base master $(git branch --show-current))`
+  - Commit all changes
